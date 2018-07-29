@@ -1,0 +1,39 @@
+{
+  "name": "pmbot",
+  "version": "1.0.0",
+  "description": "Promo-Mentors bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "npm run build && node dist/bot.js",
+    "dev": "nodemon src/bot.js --exec babel-node",
+    "clean": "rimraf dist",
+    "build": "npm run clean && babel src -s -d dist --source-maps false"
+  },
+  "author": "Reazul Iqbal",
+  "license": "MIT",
+  "dependencies": {
+    "commando-provider-mongo": "^1.2.1",
+    "discord.js": "^11.3.2",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^6.0.0",
+    "dsteem": "^0.9.0",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "rimraf": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeBull/PMBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CodeBull/PMBot/issues"
+  },
+  "homepage": "https://github.com/CodeBull/PMBot#readme"
+}
