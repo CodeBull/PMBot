@@ -24,7 +24,7 @@ export default class HelpCommand extends Command {
 
         ${stripIndents`
           ${(msg.member.roles.some(role => config.MANAGER_ROLE.includes(role.name))) ? stripIndents`
-            **__For Managers__**
+            **__Manager command list__**
 
             **${config.COMMAND_PREFIX}add-mentor** *adds a mentor*
             Format: \`${config.COMMAND_PREFIX}add-mentor [@DISCORD NAME] [STEEM USERNAME]\`
@@ -33,7 +33,9 @@ export default class HelpCommand extends Command {
           ` : ''}
 
           ${(msg.member.roles.some(role => config.MENTOR_ROLE.includes(role.name))) ? stripIndents`
-            **__For Mentors__**
+            **__Mentor command list__**
+
+            With the following commands you can add a new workshop, open and close workshops, generate a closing message with a tip link.
 
             **${config.COMMAND_PREFIX}add-workshop** *adds a new workshop*
             Format: \`${config.COMMAND_PREFIX}add-workshop ['TITTLE'] [#CHANNEL] [@MENTOR] [WEEKDAY] [TIME] [PRICE]\`
@@ -56,11 +58,11 @@ export default class HelpCommand extends Command {
 
           ` : ''}
 
-          **__For Users__**
+          **__User command list__**
+
+          Use the following commands to join workshops, check the schedule, and tip a mentor.
 
           **${config.COMMAND_PREFIX}schedule** *shows the list of workshops*
-          Format: \`${config.COMMAND_PREFIX}schedule\`
-          Example: \`${config.COMMAND_PREFIX}schedule\`
 
           **${config.COMMAND_PREFIX}join-workshop** *subscribes to a workshop*
           Format: \`${config.COMMAND_PREFIX}join-workshop [WORKSHOP ID]\`
