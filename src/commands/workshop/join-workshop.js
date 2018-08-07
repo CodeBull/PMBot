@@ -39,7 +39,7 @@ export default class JoinWorkshopCommand extends Command {
         memo,
       })
         .then(() => {
-          message.reply(`To subscribe to next session of **${workshop.name}**, please pay ${workshop.price} by clicking ${link} via SteemConnect or transfer to \`${config.STEEM_ACCOUNT}\` with \`${memo}\` as memo from your steem account.\n\nAfter payment, please try \`${config.COMMAND_PREFIX}vp ${memo}\` to complete your subscription.`);
+          message.reply(`To subscribe to next session of **${workshop.name}**, please pay ${workshop.price} by clicking ${link} via SteemConnect or transfer to \`${config.STEEM_ACCOUNT}\` with \`${memo}\` as memo from your steem account.\n\nTo check if your registration has been verified type \`${config.COMMAND_PREFIX}vp ${memo}\`.`);
         })
         .catch(e => console.log(e));
     } else {
