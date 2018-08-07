@@ -4,55 +4,55 @@ PMBot is a workshop manager bot for @promo-mentors.
 
 ## Commands
 
-`$add-mentor` adds a mentor
+**`$add-mentor`** adds a mentor
 
 Format: `$add-mentor [@DISCORD NAME] [STEEM USERNAME]`
 
 Example: `$add-mentor @futurethinker futurethinker`
 
 
-`$add-workshop` adds a new workshop
+**`$add-workshop`** adds a new workshop
 
 Format: `$add-workshop ['TITTLE'] [#CHANNEL] [@MENTOR] [WEEKDAY] [TIME] [PRICE]`
 
 Example: `$add-workshop 'Feedback workshop' #general-feedback-session @futurethinker Saturday 09:00-11:00 0.001 SBD`
 
 
-`$open-workshop` opens a workshop
+**`$open-workshop`** opens a workshop
 
 Format: `$open-workshop [WORKSHOP ID]`
 
 Example: `$open-workshop 4325`
 
 
-`$close-workshop` closes a workshop
+**`$close-workshop`** closes a workshop
 
 Format: `$close-workshop [WORKSHOP ID]`
 
 Example: `$close-workshop 4325`
 
 
-`$show-message` shows a predefined message
+**`$show-message`** shows a predefined message
 
 Format: `$show-message [TYPE]`
 
 Example: `$show-message closing`
 
 
-`$show-message closing` shows closing message
+**`$show-message closing`** shows closing message
 
 
-`$schedule` shows the list of workshops
+**`$schedule`** shows the list of workshops
 
 
-`$join-workshop` subscribes to a workshop
+**`$join-workshop`** subscribes to a workshop
 
 Format: `$join-workshop [WORKSHOP ID]`
 
 Example: `$join-workshop 4325`
 
 
-`$tip` generates a link to tip a mentor
+**`$tip`** generates a link to tip a mentor
 
 Format: `$tip [MENTOR] [AMOUNT]`
 
