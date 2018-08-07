@@ -26,11 +26,16 @@ client.setProvider((mongoose.connection)
 
 // Registering all commands
 client.registry
+  .registerDefaultTypes()
   .registerGroups([
     ['admin', 'Administrative commands'],
     ['workshop', 'Workshop related commands'],
+    ['util', 'Utility commands'],
   ])
-  .registerDefaults()
+  .registerDefaultGroups()
+  .registerDefaultCommands({
+    help: false,
+  })
   .registerCommandsIn(path.join(__dirname, 'commands'));
 
 client.on('ready', () => {
